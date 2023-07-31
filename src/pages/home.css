@@ -1,0 +1,9 @@
+/* If you only want to center the cards horizontally */
+.change {
+  border: 30px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 100px 0;
+}
