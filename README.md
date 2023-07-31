@@ -1,3 +1,4 @@
+
 # StarWars DashBoard
 
 __Using Swapi_
@@ -19,3 +20,5 @@ __Using Swapi_
         "react-scripts": "^5.0.1",
         "styled-components": "^5.3.3",
         "web-vitals": "^2.1.4"
+
+[Live]("https://star-wars-five-pi.vercel.app/")
