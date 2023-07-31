@@ -1,7 +1,7 @@
 
 # StarWars DashBoard
 
-__Using Swapi_ (🔗)[https://swapi.dev/]
+__Using Swapi_ 
 "dependencies": {
         "@tailwindcss/aspect-ratio": "^0.4.2",
         "@testing-library/jest-dom": "^5.16.1",
@@ -20,5 +20,5 @@ __Using Swapi_ (🔗)[https://swapi.dev/]
         "react-scripts": "^5.0.1",
         "styled-components": "^5.3.3",
         "web-vitals": "^2.1.4"
-
+(Swapi)[https://swapi.dev/]
 [Live](https://star-wars-five-pi.vercel.app/)
