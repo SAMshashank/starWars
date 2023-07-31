@@ -21,4 +21,4 @@ __Using Swapi_
         "styled-components": "^5.3.3",
         "web-vitals": "^2.1.4"
 
-[Live]("https://star-wars-five-pi.vercel.app/")
+[Live](https://star-wars-five-pi.vercel.app/)
