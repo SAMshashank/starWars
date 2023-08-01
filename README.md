@@ -1,25 +1,28 @@
+=======
+
 # StarWars DashBoard
 
 # \__Using Swapi_ [🔗](https://swapi.dev/)
 
-"dependencies": {
-"@tailwindcss/aspect-ratio": "^0.4.2",
-"@testing-library/jest-dom": "^5.16.1",
-"@testing-library/react": "^12.1.2",
-"@testing-library/user-event": "^13.5.0",
-"bootstrap": "^5.3.1",
-"node-modules": "^0.0.1",
-"react": "^17.0.2",
-"react-audio-player": "^0.17.0",
-"react-bootstrap": "^2.8.0",
-"react-dom": "^17.0.2",
-"react-helmet": "^6.1.0",
-"react-icons": "^4.3.1",
-"react-query": "^3.39.3",
-"react-router-dom": "^5.3.4",
-"react-scripts": "^5.0.1",
-"styled-components": "^5.3.3",
-"web-vitals": "^2.1.4"
+# Dependencies:
+
+        "@tailwindcss/aspect-ratio": "^0.4.2",
+        "@testing-library/jest-dom": "^5.16.1",
+        "@testing-library/react": "^12.1.2",
+        "@testing-library/user-event": "^13.5.0",
+        "bootstrap": "^5.3.1",
+        "node-modules": "^0.0.1",
+        "react": "^17.0.2",
+        "react-audio-player": "^0.17.0",
+        "react-bootstrap": "^2.8.0",
+        "react-dom": "^17.0.2",
+        "react-helmet": "^6.1.0",
+        "react-icons": "^4.3.1",
+        "react-query": "^3.39.3",
+        "react-router-dom": "^5.3.4",
+        "react-scripts": "^5.0.1",
+        "styled-components": "^5.3.3",
+        "web-vitals": "^2.1.4"
 
 [Live](https://star-wars-five-pi.vercel.app/)
 
@@ -61,3 +64,5 @@ The Routes.js file exports the Routes component, which is responsible for render
 For example, when the user visits the URL path /films, the Film component will be rendered. Similarly, visiting /people, /planets, /starships, /species, or /vehicles will render the corresponding components People, Planets, StarShips, Species, or Vehicles, respectively. The HomePage component will be rendered for the root URL /.
 
 Ensure that you have the necessary components defined in the corresponding files and that you have set up the React Router DOM in your main application file to use the Routes component. With this setup, your Star Wars dashboard will have a routing system in place to navigate between different features/pages
+
+> > > > > > > 8e1ceeacff9cceb50bc4e4e864693c7bd5ad390b
