@@ -14,11 +14,11 @@ import {
 } from "react-icons/ai";
 import { BsPencil, BsShare, BsFolderSymlink } from "react-icons/bs";
 const fetchFilms = async () => {
-  const res = await fetch(`https://swapi.dev/api/species/`);
+  const res = await fetch(`https://swapi.dev/api/vehicles/`);
   return res.json();
 };
 
-const Species = ({ film }) => {
+const Vehicles = ({ film }) => {
   const [activeButton, setActiveButton] = useState("List");
 
   const handleButtonClick = (buttonName) => {
@@ -81,18 +81,18 @@ const Species = ({ film }) => {
                             {film.name}
                           </p>
                           <p className="mt-1 truncate text-xs leading-5 text-slate-100">
-                            Homeworld -&nbsp;{film.terrainr}
+                            Model -&nbsp;{film.model}
                           </p>
                         </div>
                       </div>
                       <div className="hidden sm:flex sm:flex-col sm:items-end">
                         <p className="text-sm leading-6 text-slate-100">
-                          Lifespan
+                          Top speed
                         </p>
 
                         <p className="mt-1 text-xs leading-5 text-slate-100">
-                          <time dateTime={film.average_lifespan}>
-                            {film.average_lifespan}
+                          <time dateTime={film.max_atmosphering_speed}>
+                            {film.max_atmosphering_speed}
                           </time>
                         </p>
                       </div>
@@ -207,4 +207,4 @@ const Species = ({ film }) => {
   );
 };
 
-export default Species;
+export default Vehicles;

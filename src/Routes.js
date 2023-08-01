@@ -5,6 +5,8 @@ import Film from "./pages/features/Films";
 import People from "./pages/features/People";
 import Planets from "./pages/features/Planets";
 import StarShips from "./pages/features/StarsShips";
+import Species from "./pages/features/Species";
+import Vehicles from "./pages/features/Vehicles";
 const Routes = () => {
   return (
     <Switch>
@@ -22,6 +24,12 @@ const Routes = () => {
       </Route>
       <Route exact path="/starships">
         <StarShips />
+      </Route>
+      <Route exact path="/species">
+        <Species />
+      </Route>
+      <Route exact path="/vehicles">
+        <Vehicles />
       </Route>
     </Switch>
   );
