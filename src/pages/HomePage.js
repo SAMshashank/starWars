@@ -20,9 +20,12 @@ const HomePage = () => {
         <Card.Body>
           <Card.Text>
             <h3 style={{ color: "#3B3F5C" }}>
-              Welcome to Star Wars
-              <br />
-              Dashbord
+              <strong>
+                {" "}
+                Welcome to Star Wars
+                <br />
+                Dashbord
+              </strong>
             </h3>
             Star Wars is an American epic space opera multimedia franchise
             created by George Lucas, which began
