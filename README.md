@@ -65,4 +65,4 @@ For example, when the user visits the URL path /films, the Film component will b
 
 Ensure that you have the necessary components defined in the corresponding files and that you have set up the React Router DOM in your main application file to use the Routes component. With this setup, your Star Wars dashboard will have a routing system in place to navigate between different features/pages
 
-> > > > > > > 8e1ceeacff9cceb50bc4e4e864693c7bd5ad390b
+
