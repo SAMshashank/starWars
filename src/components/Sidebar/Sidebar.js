@@ -28,7 +28,7 @@ import {
 } from "react-icons/ai";
 
 // import { ThemeContext } from "./../../App";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 const Sidebar = () => {
   const searchRef = useRef(null);
@@ -48,7 +48,9 @@ const Sidebar = () => {
   return (
     <SSidebar>
       <SLogo>
-        <img src={logoSVG} alt="logo" />
+        <Link to="/">
+          <img src={logoSVG} alt="logo" />
+        </Link>
       </SLogo>
 
       {linksArray.map(({ icon, val, label, to, handleReload }) => (

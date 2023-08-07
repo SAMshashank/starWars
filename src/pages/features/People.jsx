@@ -29,7 +29,7 @@ const People = ({ film }) => {
     onError: () => console.log("Error while fetching data of films"),
   });
   const pic = {
-    pic: "https://nationaltoday.com/wp-content/uploads/2020/05/star-wars-day-1200x834.jpg.webp",
+    pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmpMRQyi343KoSHl9x0OhSyo6n1r80yWnZzw&usqp=CAU",
   };
 
   return (
@@ -120,11 +120,15 @@ const People = ({ film }) => {
                   // Check if data exists and data.results is an array before mapping
                   Array.isArray(data?.results) ? (
                     data.results.map((film) => (
-                      <a key={film.title} className="group">
+                      <a
+                        key={film.time}
+                        href={film.url}
+                        className="group"
+                        target="_blank"
+                      >
                         <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                           <img
                             src={pic.pic}
-                            href={film.url}
                             alt="Star Wars img"
                             className="h-full w-full object-cover object-center group-hover:opacity-75"
                           />

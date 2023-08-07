@@ -29,7 +29,7 @@ const Vehicles = ({ film }) => {
     onError: () => console.log("Error while fetching data of films"),
   });
   const pic = {
-    pic: "https://nationaltoday.com/wp-content/uploads/2020/05/star-wars-day-1200x834.jpg.webp",
+    pic: "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-25-at-7.20.40-PM.jpg",
   };
 
   return (

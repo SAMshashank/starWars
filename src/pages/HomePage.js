@@ -20,11 +20,11 @@ const HomePage = () => {
         <Card.Body>
           <Card.Text>
             <h3 style={{ color: "#3B3F5C" }}>
-              <strong>
+              <strong style={{ fontWeight: "bold", fontSize: "20px" }}>
                 {" "}
                 Welcome to Star Wars
                 <br />
-                Dashbord
+                Dashboard
               </strong>
             </h3>
             Star Wars is an American epic space opera multimedia franchise
