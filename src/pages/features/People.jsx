@@ -6,6 +6,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { BiGridAlt } from "react-icons/bi";
 import Loader from "../../Loader";
 import Dropdown from "react-bootstrap/Dropdown";
+import Input from "./Input";
 import {
   AiFillEye,
   AiOutlineDownload,
@@ -32,28 +33,35 @@ const People = ({ film }) => {
     pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmpMRQyi343KoSHl9x0OhSyo6n1r80yWnZzw&usqp=CAU",
   };
 
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredFilms = data?.results?.filter((film) =>
+    film.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
   return (
     <>
-      <div className="container">
-        <ButtonGroup size="sm" className=".btn-group">
-          <Button
-            style={{ color: "white" }}
-            variant={activeButton === "List" ? "light" : "secondary"}
-            onClick={() => handleButtonClick("List")}
-          >
-            <AiOutlineMenu />
-          </Button>
-          <Button
-            style={{ color: "white" }}
-            variant={activeButton === "Grid" ? "light" : "secondary"}
-            onClick={() => handleButtonClick("Grid")}
-          >
-            <BiGridAlt />
-            &nbsp;Grid
-          </Button>
-        </ButtonGroup>
-      </div>
+      <Input value={searchQuery} setSearchQuery={setSearchQuery} />
       <div className="py-3 m-10 ">
+        <div className="container">
+          <ButtonGroup size="sm" className=".btn-group">
+            <Button
+              style={{ color: "white" }}
+              variant={activeButton === "List" ? "light" : "secondary"}
+              onClick={() => handleButtonClick("List")}
+            >
+              <AiOutlineMenu />
+            </Button>
+            <Button
+              style={{ color: "white" }}
+              variant={activeButton === "Grid" ? "light" : "secondary"}
+              onClick={() => handleButtonClick("Grid")}
+            >
+              <BiGridAlt />
+              &nbsp;Grid
+            </Button>
+          </ButtonGroup>
+        </div>
+
         <h3 className="font-semibold text-lg">Films</h3>
         {activeButton === "List" && (
           <div className="h-full w-full object-cover object-center group-hover:opacity-75">
@@ -64,8 +72,8 @@ const People = ({ film }) => {
                 <div>Error fetching data</div>
               ) : status === "success" ? (
                 // Check if data exists and data.results is an array before mapping
-                Array.isArray(data?.results) ? (
-                  data.results.map((film) => (
+                Array.isArray(filteredFilms) && filteredFilms.length > 0 ? (
+                  filteredFilms.map((film) => (
                     <li
                       key={film.name}
                       className="flex justify-between gap-x-6 py-5"
@@ -118,8 +126,8 @@ const People = ({ film }) => {
                   <div>Error fetching data</div>
                 ) : status === "success" ? (
                   // Check if data exists and data.results is an array before mapping
-                  Array.isArray(data?.results) ? (
-                    data.results.map((film) => (
+                  Array.isArray(filteredFilms) && filteredFilms.length > 0 ? (
+                    filteredFilms.map((film) => (
                       <a
                         key={film.time}
                         href={film.url}
