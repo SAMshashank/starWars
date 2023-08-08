@@ -65,4 +65,25 @@ For example, when the user visits the URL path /films, the Film component will b
 
 Ensure that you have the necessary components defined in the corresponding files and that you have set up the React Router DOM in your main application file to use the Routes component. With this setup, your Star Wars dashboard will have a routing system in place to navigate between different features/pages
 
+# Search function
 
+<per>
+import React from "react";
+
+function Input({ searchQuery, setSearchQuery }) {
+return (
+<div>
+<input
+type="text"
+placeholder="Search by name or title"
+value={searchQuery}
+onChange={(e) => setSearchQuery(e.target.value)}
+className=" absolute p-2 border rounded-md right-10 text-black"
+/>
+</div>
+);
+}
+
+export default Input;
+
+</per>
